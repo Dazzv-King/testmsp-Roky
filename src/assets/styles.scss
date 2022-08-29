@@ -1,0 +1,60 @@
+//обнуление
+@import "nullstyle.scss";
+//--------------
+.container {
+  margin: 0 auto;
+  width: 85%;
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+}
+.testmsp{
+margin-top: 40px;
+position: relative;
+
+
+  .other__city{
+    display: flex;
+    flex-direction: column-reverse;
+    // align-items: center;
+  }
+
+  .input__city{
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 15px;
+    width: 204px;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .cities {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px rgb(144, 144, 144);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 4px;
+    width: 200px;
+    position: absolute;
+    z-index: 5;
+    background-color: #fff;
+    margin-top: -25px;
+
+    .city {
+      padding: 2px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
+.vue-map-container{
+  margin-top: 10px;
+
+}
+.vue-map:nth-child(3) {
+  display: none;
+}
+
