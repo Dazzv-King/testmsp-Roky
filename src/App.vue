@@ -11399,7 +11399,7 @@ export default {
           "subject": "Московская область"
         }
       ] 
-      return cities.filter(t => t.name.includes(this.selectedCity)).slice(0, 9)
+      return cities.filter(t => t.name.toUpperCase().includes(this.selectedCity.toUpperCase())).slice(0, 9)
       },
   },
 
